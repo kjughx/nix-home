@@ -17,6 +17,35 @@
     keymaps = [
      {
        mode = "n";
+       key = "]c";
+       action.__raw = ''function()
+          if vim.wo.diff then
+            return ']c'
+          end
+          vim.schedule(function()
+            require('gitsigns').next_hunk()
+          end)
+          return '<Ignore>'
+        end'';
+       options = { desc = "Next hunk"; expr = true; };
+     }
+     {
+       mode = "n";
+       key = "[c";
+       action.__raw = ''function()
+          if vim.wo.diff then
+            return '[c'
+          end
+          vim.schedule(function()
+            require('gitsigns').prev_hunk()
+          end)
+          return '<Ignore>'
+        end'';
+       options = { desc = "Previous hunk"; expr = true; };
+     }
+
+     {
+       mode = "n";
        key = "<leader>gs";
        action.__raw = ''require('gitsigns').stage_hunk'';
        options = {desc = "Stage hunk";};
