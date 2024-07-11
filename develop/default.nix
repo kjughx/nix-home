@@ -34,6 +34,7 @@
       shellAliases = {
         vi = "nvim";
         vim = "nvim";
+        gg = "vim -c 'Neogit'";
       };
       plugins = [
         { name = "fzf"; src = pkgs.fishPlugins.fzf.src; }

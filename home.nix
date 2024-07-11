@@ -78,6 +78,7 @@
   home.sessionVariables = {
     EDITOR = "nvim";
     VISUAL = "nvim";
+    NIXOS_OZONE_WL = "1";
   };
 
   xsession.enable = true;

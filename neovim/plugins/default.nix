@@ -1,8 +1,10 @@
 {pkgs, ...}: {
     imports = [
+        ./extraPlugins.nix
         ./treesitter.nix
         ./lsp.nix
         ./gitsigns.nix
+        ./neogit.nix
     ];
 
     programs.nixvim = {
