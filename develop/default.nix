@@ -6,6 +6,12 @@
     python3
     tmux
     ripgrep
+    sshfs
+    zed-editor
+# This can come in shell.nix but zed doesn't know the path
+    gcc
+    rustup
+    nodejs
   ];
 
 
