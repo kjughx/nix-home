@@ -25,6 +25,7 @@
     fuzzel
     libnotify
     nerdfonts
+    spotify
     ripgrep
     waybar
 
