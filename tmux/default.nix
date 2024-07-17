@@ -23,6 +23,8 @@
         set -sa terminal-overrides "*:Tc"
         set -g default-terminal "screen-256color"
         set-window-option -g mode-keys vi
+        set-option -g default-shell /run/current-system/sw/bin/fish
+
         bind -n M-h select-pane -L
         bind -n M-j select-pane -D
         bind -n M-k select-pane -U
