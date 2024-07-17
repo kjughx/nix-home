@@ -7,9 +7,6 @@
         layer = "top";
         position = "top";
         height = 35;
-        output = [
-          "eDP-1"
-        ];
 
         modules-left = [ "custom/logo" "sway/workspaces" "sway/mode" "sway/window" ];
         modules-center = [ "clock" ];
